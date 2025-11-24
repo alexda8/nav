@@ -1,6 +1,6 @@
 # ⚠️ 重要说明：此文件仅用于开发环境
 # 
-name = "nav"
+name = "bookmark-manager"
 compatibility_date = "2024-01-01"
 pages_build_output_dir = "dist"
 #
