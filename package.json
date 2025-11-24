@@ -6,7 +6,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npx wrangler pages project create nav --production-branch=main || echo '项目可能已存在，继续部署'",
     "deploy": "npx wrangler pages deploy dist --project-name=nav",
     "ext:build": "bash browser-extension/package.sh",
     "ext:build:chromium": "bash -lc 'cd browser-extension && rm -rf dist && mkdir -p dist/chromium && cp manifest.json dist/chromium/ && cp popup.html popup.js dist/chromium/ && cp options.html options.js dist/chromium/ && cp background.js dist/chromium/ && cp styles.css dist/chromium/ && cp -r icons dist/chromium/ && cd dist/chromium && zip -r ../bookmark-manager-chromium.zip . -q'",
