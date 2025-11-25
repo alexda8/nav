@@ -6,7 +6,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "wrangler pages deploy ./dist"
     "deploy": "npm run build && wrangler pages deploy dist",
     "ext:build": "bash browser-extension/package.sh",
     "ext:build:chromium": "bash -lc 'cd browser-extension && rm -rf dist && mkdir -p dist/chromium && cp manifest.json dist/chromium/ && cp popup.html popup.js dist/chromium/ && cp options.html options.js dist/chromium/ && cp background.js dist/chromium/ && cp styles.css dist/chromium/ && cp -r icons dist/chromium/ && cd dist/chromium && zip -r ../bookmark-manager-chromium.zip . -q'",
